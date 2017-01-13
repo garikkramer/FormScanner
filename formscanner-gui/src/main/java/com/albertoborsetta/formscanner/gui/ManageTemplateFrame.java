@@ -1379,4 +1379,5 @@ public class ManageTemplateFrame extends InternalFrame implements TabbedView {
 	public void viewButtonVisible(boolean b){
 		viewTemplateButton.setVisible(b);
 	}
+	public void saveButtonEnabled(boolean b) { saveTemplateButton.setEnabled(b); }
 }

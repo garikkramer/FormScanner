@@ -575,6 +575,7 @@ public class FormScannerModel {
 		}
 		manageTemplateFrame = new ManageTemplateFrame(this);
 		manageTemplateFrame.viewButtonEnabled(true);
+		manageTemplateFrame.saveButtonEnabled(true);
 		manageTemplateFrame.setupFieldsTable();
 		view.arrangeFrame(manageTemplateFrame);
 
