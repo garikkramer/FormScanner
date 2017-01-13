@@ -575,17 +575,13 @@ public class FormScannerModel {
 		}
 		manageTemplateFrame = new ManageTemplateFrame(this);
 		manageTemplateFrame.viewButtonEnabled(true);
-		view.arrangeFrame(manageTemplateFrame);
 		manageTemplateFrame.setupFieldsTable();
+		view.arrangeFrame(manageTemplateFrame);
 
 	}
 
 	public void showTemplate(){
-		if(imageFrame == null)
-			createTemplateImageFrame(FormScannerConstants.VIEW);
-
-		imageFrame.updateImage(templateImage);
-		view.arrangeFrame(imageFrame);
+		createTemplateImageFrame(FormScannerConstants.VIEW);
 	}
 
 	public void createTemplateImageFrame(String fieldsType) {
